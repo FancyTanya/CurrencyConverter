@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConvertController">
+   <children>
+      <VBox layoutX="6.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="473.0" prefWidth="1200.0" style="-fx-background-color: #F4C059;">
+               <children>
+                  <Label layoutX="427.0" layoutY="139.0" text="Currency converter">
+                     <font>
+                        <Font name="System Bold" size="37.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="380.0" prefWidth="1200.0" style="-fx-background-color: #B7B5B0;" />
+         </children>
+      </VBox>
+      <AnchorPane layoutX="72.0" layoutY="206.0" prefHeight="481.0" prefWidth="1055.0" style="-fx-background-color: #B7B5B0; -fx-background-radius: 30; -fx-border-style: 30;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TextField fx:id="amount" layoutX="115.0" layoutY="60.0" prefHeight="31.0" prefWidth="165.0" promptText="Enter amount" style="-fx-border-color: #151413;" />
+            <Label layoutX="115.0" layoutY="24.0" prefHeight="21.0" prefWidth="165.0" text="Amount">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <Label layoutX="294.0" layoutY="24.0" prefHeight="21.0" prefWidth="150.0" text="From">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <Label layoutX="668.0" layoutY="24.0" prefHeight="21.0" prefWidth="150.0" text="To">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <Button layoutX="503.0" layoutY="60.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="35.0" style="-fx-background-color: #B7B5B0;" text=" " />
+            <ImageView fx:id="image_button_convert" fitHeight="31.0" fitWidth="35.0" layoutX="538.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../java/com/github/currencyconverter/assets/refresh_rotate_icon.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="from_combo_box" layoutX="294.0" layoutY="60.0" prefWidth="150.0" />
+            <ComboBox fx:id="to_combo_box" layoutX="668.0" layoutY="60.0" prefWidth="150.0" />
+            <HBox layoutY="225.0" prefHeight="257.0" prefWidth="1055.0">
+               <children>
+                  <VBox prefHeight="257.0" prefWidth="1058.0">
+                     <children>
+                        <Label text="Convert amount:" textAlignment="CENTER" underline="true">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="convert_result" prefHeight="200.0" prefWidth="100.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
