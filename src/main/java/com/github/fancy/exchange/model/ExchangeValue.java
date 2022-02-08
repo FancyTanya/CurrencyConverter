@@ -52,6 +52,4 @@ public class ExchangeValue {
         this.to = to;
         this.conversion = conversion;
     }
-
-
 }

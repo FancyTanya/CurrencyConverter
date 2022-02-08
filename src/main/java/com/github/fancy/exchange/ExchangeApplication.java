@@ -23,6 +23,7 @@ public class ExchangeApplication extends Application {
     public static void main(String[] args) {
         launch();
         SpringApplication.run(ExchangeApplication.class, args);
+
     }
 
 }

@@ -13,4 +13,5 @@ public class FixerApi {
     public String path = "";
 
     public String latestRate = "http://data.fixer.io/api/latest?access_key=02b4ee3cd4e93434b1c8ccdfd79de11e=";
+
 }
